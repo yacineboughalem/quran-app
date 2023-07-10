@@ -1,0 +1,66 @@
+//Sizing Variables
+$grid-breakpoints: (
+  xs: 0,
+  ss: 380px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+//Colours
+$c-main:  #502882;
+$c-main-light: #DBEBE6;
+$c-main-dark: #115A5D;
+$c-second: #009ee0;
+$c-third: #502882;
+$c-price: #c6426e;
+$c-dark: #0c0f16;
+$c-text: #262b44;
+$c-text-2: #5E7B96;
+
+$c-gray: #777d84;
+
+$c-background: #eeeeee;
+
+$c-forth: #158E9F;
+$c-fifth: #084F83;
+
+$c-gray-2: #99A1C7;
+$c-gray-3: #ADB5D5;
+$c-dark3: #030E2F;
+$c-black: #000000;
+$c-white: #ffffff;
+$c-light: #f4f4f6;
+// $c-background: #FCFDFF;
+// $c-background: #F8FAFF;
+
+$c-green: #22d07c;
+$c-danger: #f2495a;
+$c-success: #22d07c;
+
+$c-second-light: rgb(247, 247, 247);
+$c-orange: #FF9933;
+$c-warning: #FF9933;
+
+$c-background2: #060F15;
+$c-gray-e1: #E1E4F7;
+// $c-gray: #8498AF;
+$c-gray-76: #425576;
+$c-gray-d2: #CAD1DE;
+$c-gray-light: #ECEEF2;
+$c-gray-9c: #83839c;
+$c-gray-l2: #F8F8FF;
+$c-gray-ff: #E9F0EF;
+$c-gray-f4: #E7EAF4;
+$c-blue-dark: #002E74;
+$c-dark-2: #0D285A;
+
+
+$c-grey-33: #333333;
+$c-grey-f7: #f7f7f7;
+$c-grey-ab: #ababab;
+$c-grey-b9: #b9b9b9;
+
+
+

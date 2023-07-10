@@ -1,0 +1,85 @@
+.header__area {
+    background-color: $c-white;
+    padding: 16px;
+    box-shadow: rgba(162, 177, 193, 0.1) 0px 0px 10px;
+    margin: 0 0 16px ;
+}
+
+.menu__area {
+    background-color: $c-main;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    &--item {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        flex-grow: 1;
+        width: 100%;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+}
+
+.header__options {
+    padding: 16px;
+    background-color: $c-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: $c-gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .right {
+        display: flex;
+        align-items: center; 
+        gap: 16px;
+        font-size: 14px;
+    }
+
+}
+
+.header__surah {
+    padding: 16px;
+    background-color: $c-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #50555a;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .right {
+        display: flex;
+        align-items: center; 
+        gap: 16px;
+        font-size: 18px;
+    }
+
+}

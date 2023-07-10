@@ -1,0 +1,19 @@
+//Setup
+@import "partials/variables";
+@import "partials/spacing";
+
+
+// Base styles
+@import "base/base";
+
+//Component Styles
+@import "components/container";
+@import "components/header";
+@import "components/grid";
+@import "components/buttons";
+@import "components/heading";
+@import "components/qualifiers";
+
+// Pages Style
+@import "screens/home";
+

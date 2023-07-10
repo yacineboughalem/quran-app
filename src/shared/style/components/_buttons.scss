@@ -1,0 +1,323 @@
+
+
+.button__wrapper {
+  display: flex;
+  &.right {
+    justify-content: end;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.left {
+    justify-content: start;
+  }
+
+  button {
+    padding: 0 16px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: 8px;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &:hover {
+    border-color: none !important;
+  }
+
+  .primary {
+    background-color: $c-main;
+    color: $c-white;
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-main-dark;
+      border: none !important;
+    }
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .secondary {
+    background-color: $c-second;
+    color: $c-white;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-gray;
+      border: none !important;
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:focus,
+    &[disabled]:hover {
+      background-color: $c-second;
+      color: $c-white;
+      opacity: 0.3;
+    }
+  }
+
+  .primary--light {
+    background-color: $c-main-light;
+    color: $c-main;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-main;
+      border: none !important;
+    }
+  }
+
+  .secondary--light {
+    background-color: $c-background;
+    color: $c-text;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-text;
+      border: none !important;
+    }
+  }
+
+  .primary--link {
+    background-color: transparent;
+    color: $c-main;
+    box-shadow: none;
+
+    &:hover {
+      background-color: transparent;
+      border: none !important;
+    }
+  }
+
+  .secondary--link {
+    background-color: transparent;
+    color: $c-gray;
+    box-shadow: none;
+    padding: 0 8px !important;
+
+    &:hover {
+      color: $c-text !important;
+      background-color: transparent;
+      border: none !important;
+    }
+  }
+
+  .primary--outlined {
+    background-color: transparent;
+    color: $c-main;
+    border: 1px solid $c-main;
+
+    &:hover {
+      background-color: $c-white;
+      border: 1px solid $c-main;
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:focus,
+    &[disabled]:hover {
+      background-color: $c-white;
+      border: 1px solid $c-main;
+      opacity: 0.3;
+    }
+  }
+
+  &.ant-btn:has(.primary--outlined) {
+    background-color: transparent;
+    border: 1px solid $c-main !important;
+    color: $c-main;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-gray !important;
+      border: 1px solid $c-gray !important;
+      background-color: transparent;
+      border: 1px solid $c-gray !important;
+      color: $c-gray;
+      box-shadow: none;
+
+      &:hover {
+        color: $c-black !important;
+        border: 1px solid $c-gray !important;
+        background-color: transparent;
+      }
+    }
+  }
+  .default {
+    background-color: $c-white;
+    color: $c-text;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-gray !important;
+      background-color: $c-background;
+      border: none !important;
+    }
+  }
+
+  .danger {
+    background-color: $c-danger;
+    color: $c-white;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-danger;
+      border: none !important;
+    }
+  }
+
+  .danger--light {
+    background-color: rgba($c-danger, 0.1);
+    color: $c-danger;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-danger;
+      border: none !important;
+    }
+  }
+
+  .danger--link {
+    background-color: transparent;
+    color: $c-danger;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-danger;
+      background-color: transparent !important;
+      border: none !important;
+    }
+  }
+
+  .danger--outlined {
+    background-color: transparent;
+    color: $c-danger;
+    border: 1px solid $c-danger;
+
+    &:hover {
+      background-color: $c-white;
+      border: 1px solid $c-danger;
+      color: rgba($c-danger, 1);
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:focus,
+    &[disabled]:hover {
+      background-color: $c-white;
+      border: 1px solid $c-danger;
+      opacity: 0.3;
+      color: rgba($c-danger, 1);
+    }
+  }
+
+  .success {
+    background-color: $c-green;
+    color: $c-white;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-green;
+      border: none !important;
+    }
+  }
+
+  .success--light {
+    background-color: rgba($c-success, 0.1);
+    color: $c-success;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-success;
+      border: none !important;
+    }
+  }
+
+  .success--link {
+    background-color: transparent;
+    color: $c-success;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-green;
+      background-color: transparent !important;
+      border: none !important;
+    }
+  }
+
+  .gray {
+    background-color: $c-gray;
+    color: $c-white;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-text !important;
+      background-color: $c-gray-light;
+      border: none !important;
+    }
+  }
+
+  .warning {
+    background-color: $c-warning;
+    color: $c-white;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-white !important;
+      border: none !important;
+      filter: brightness(0.9);
+    }
+  }
+
+  .warning--light {
+    background-color: rgba($c-warning, 0.1);
+    color: $c-warning;
+
+    &:hover {
+      color: $c-white !important;
+      background-color: $c-warning;
+      border: none !important;
+    }
+  }
+
+  .warning--link {
+    background-color: transparent;
+    color: $c-warning;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-orange;
+      background-color: transparent !important;
+      border: none !important;
+    }
+  }
+
+  .gray--outlined {
+    background-color: transparent;
+    border: 1px solid $c-gray !important;
+    color: $c-text;
+    box-shadow: none;
+
+    &:hover {
+      color: $c-gray !important;
+      border: 1px solid $c-gray !important;
+      color: $c-gray;
+    }
+  }
+
+  .medium--btn {
+    padding: 0 40px;
+  }
+  .full--btn {
+    width: 100%;
+  }
+}

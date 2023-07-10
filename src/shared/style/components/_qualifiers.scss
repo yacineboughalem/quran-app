@@ -1,0 +1,255 @@
+.qualifiers__wrapper {
+  background-color: $c-white;
+  padding: 16px;
+}
+
+.qualifier__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+
+  border-bottom: 1px solid rgba($c-gray, 0.5);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  .right {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+    }
+
+    .content {
+      span {
+        font-size: clamp(10px, 3vw, 12px);
+        color: $c-gray;
+      }
+      h4 {
+        font-size: clamp(12px, 3vw, 14px);
+        color: $c-text;
+        font-weight: 400;
+      }
+      h5 {
+        font-size: clamp(10px, 3vw, 12px);
+        color: $c-gray;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .left {
+    span {
+      font-size: clamp(18px, 3vw, 20px);
+      color: $c-second;
+      font-weight: 500;
+    }
+  }
+}
+
+
+.show_more__area {
+    background-color: #f7f8fa;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba($c-gray, 1);
+    border: 1px solid rgba($c-gray, .2);
+    cursor: pointer;
+}
+
+.surah__wrapper {
+    background-color: $c-white;
+    padding: 16px;
+    margin-top: 12px;
+    p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+.surah__image {
+    background-color: $c-white;
+    margin-top: 16px;
+    padding: 16px;
+    position: relative;
+   
+
+    .wrap {
+        height: 40vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        img {
+            width: 100%;
+        }
+    }
+
+    .bigger {
+        height: 75vh;
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: white;
+    }
+    
+
+    .zoom {
+        position: absolute;
+        padding: 8px;
+        bottom: 4%;
+        right: 4%;
+        background-color: rgba($c-black, .8);
+        color: $c-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px ;
+        z-index: 99999;
+    }
+}
+
+
+
+.surah__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .surah__score {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+    
+        font-size: 20px;
+    
+        .icon {
+            background-color: white;
+            border-radius: 50px;
+            height: 32px;
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        gap: 16px;
+        padding: 16px 16px;
+        .button__wrapper,
+        button {
+            flex-grow: 1;
+        }
+    }
+
+  
+
+}
+
+
+.explain__text {
+    background-color: $c-white;
+    margin-top: 16px;
+    padding: 16px;
+
+    p {
+        padding: 16px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: justify;
+
+    }
+}
+
+.explain__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 16px;
+    padding: 16px 16px;
+    .button__wrapper,
+    button {
+        flex-grow: 1;
+    }
+}
+
+.results__area {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        img {
+            height: 120px;
+            width: 120px;
+            border-radius: 200px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $c-text;
+            font-weight: 500;
+        }
+        p {
+            font-size: 14px;
+            color: $c-gray;
+        }
+    }
+
+    .score {
+        background-color: white;
+        border-radius: 200px;
+        display: flex;
+        height: 180px;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+
+        span {
+            color: rgba($c-gray, 1);
+            
+        }
+
+        p {
+            font-size: 80px;
+            color: $c-second;
+            line-height: 70px;
+        }
+    }
+
+    .button__wrapper {
+        width: 70%;
+        
+    }
+}
