@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     <Helmet>‍
-        <title>QURAN APP - Home</title>‍
+        <title>QURAN APP - Home - </title>‍
         <meta name="description" content="Find all the best quality           products your pet may need" />        
         <meta name="twitter:card" content="summary_large_image" />        
         <meta name="twitter:title" content="Pets - Products" />        
