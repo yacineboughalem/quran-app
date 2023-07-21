@@ -15,8 +15,6 @@ const Home = () => {
         <title>QURAN APP - Home</title>‍
         <meta name="description" content="Find all the best quality           products your pet may need" />        
         <meta name="twitter:card" content="summary_large_image" />        
-        <meta name="twitter:site" content="@user" />        
-        <meta name="twitter:creator" content="@user" />        
         <meta name="twitter:title" content="Pets - Products" />        
         <meta name="twitter:description" content="Best Products for your pet" />        
         <meta name="twitter:image" content="url_to_image"/>        
