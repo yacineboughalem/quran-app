@@ -1,8 +1,28 @@
 import PropTypes from "prop-types";
 import Button from "../../shared/components/Button";
 import React, { useState } from "react";
+‍import { Helmet } from 'react-helmet';
+
 const Results = () => {
   return (
+    <>
+    <Helmet>‍
+        <title>QURAN APP - Results</title>‍
+        <meta name="description" content="Find all the best quality           products your pet may need" />        
+        <meta name="twitter:card" content="summary_large_image" />        
+        <meta name="twitter:site" content="@user" />        
+        <meta name="twitter:creator" content="@user" />        
+        <meta name="twitter:title" content="Pets - Products" />        
+        <meta name="twitter:description" content="Best Products for your pet" />        
+        <meta name="twitter:image" content="url_to_image"/>        
+        <meta property="og:title" content="Pets - Products" />        
+        <meta property="og:description" content="Best Products for your pet" />        
+        <meta property="og:image" content="url_to_image"/>
+        <meta property="og:url" content="pets.abc" />
+        <meta property="og:site_name" content="Pets - Products" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+      </Helmet>
     <div className={``}>
       <div className="results__area">
         <div className="infos">
@@ -24,6 +44,7 @@ const Results = () => {
         </Button>
       </div>
     </div>
+    </>
   );
 };
 Results.propTypes = {};

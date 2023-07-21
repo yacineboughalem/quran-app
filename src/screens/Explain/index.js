@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 import { TbBulb } from "react-icons/tb";
 import { FiZoomIn, FiZoomOut } from "react-icons/fi";
+‍import { Helmet } from 'react-helmet';
 
 const Explain = () => {
 
@@ -17,6 +18,24 @@ const Explain = () => {
 
   
   return (
+    <>
+    <Helmet>‍
+        <title>QURAN APP - Explain</title>‍
+        <meta name="description" content="Find all the best quality           products your pet may need" />        
+        <meta name="twitter:card" content="summary_large_image" />        
+        <meta name="twitter:site" content="@user" />        
+        <meta name="twitter:creator" content="@user" />        
+        <meta name="twitter:title" content="Pets - Products" />        
+        <meta name="twitter:description" content="Best Products for your pet" />        
+        <meta name="twitter:image" content="url_to_image"/>        
+        <meta property="og:title" content="Pets - Products" />        
+        <meta property="og:description" content="Best Products for your pet" />        
+        <meta property="og:image" content="url_to_image"/>
+        <meta property="og:url" content="pets.abc" />
+        <meta property="og:site_name" content="Pets - Products" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+      </Helmet>
     <div className={`p-top-60 p-bottom-70`}>
       <Header type={"two"} />
       <div className="surah__wrapper" onClick={() => setShow(true)}>
@@ -51,6 +70,7 @@ const Explain = () => {
       </Modal>
      
     </div>
+    </>
   );
 };
 Explain.propTypes = {};
